@@ -1,4 +1,5 @@
 # Full Stack open CI/CD
+[![Deployment Pipeline](https://github.com/microbode/pokedex-for-ci/actions/workflows/pipeline.yml/badge.svg?branch=practice)](https://github.com/microbode/pokedex-for-ci/actions/workflows/pipeline.yml)
 
 This repository is used for the CI/CD module of the Full stack open course
 
