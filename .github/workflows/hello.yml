@@ -13,3 +13,6 @@ jobs:
     steps:
       - name: Echo the message
         run: echo "Ola, que tal?"
+      - name: Data
+        run: date
+      - run: ls -ls
