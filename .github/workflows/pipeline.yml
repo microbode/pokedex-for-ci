@@ -29,4 +29,12 @@ jobs:
           command: npm run test:e2e
           start: npm run start-test
           wait-on: http://localhost:5000
+      - name: Heroku deployment
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_email: ${{secrets.HEROKU_API_EMAIL}}
+          heroku_app_name: ${{secrets.HEROKU_APP}}
+          healthcheck: "http://${{secrets.HEROKU_APP}}/health"
+          rollbackonhealthcheckfailed: true
 
