@@ -67,7 +67,7 @@ jobs:
       - name: Test
         run: npm run test
 
-  test-2e2:
+  test-e2e:
     needs: [lint, build]
     runs-on: ubuntu-18.04
     steps:
